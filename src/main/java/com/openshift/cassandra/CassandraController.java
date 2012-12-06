@@ -36,7 +36,7 @@ public class CassandraController {
         Cassandra.Client client = new Cassandra.Client(protocol);
         transport.open();
 
-        client.set_keyspace("tutorials");
+        client.set_keyspace("mykeyspace");
 
         // define column parent
         ColumnParent parent = new ColumnParent("User");
